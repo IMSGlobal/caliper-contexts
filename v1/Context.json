@@ -64,7 +64,14 @@
       "generated": "prov:generated",
       "target": "caliper:target",
       "edApp": "caliper:edApp",
-      "group": "caliper:group"
+      "group": "caliper:group",
+      "federatedSession": "caliper:federatedSession"
+    },
+    {
+      "_comment": "Caliper envelope",
+
+      "data": "caliper:data",
+      "sensor": "caliper:sensor",
     },
     {
       "_comment": "Entities",
