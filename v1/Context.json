@@ -14,7 +14,7 @@
       "schema" : "http://schema.org/", 
 
       "org" : "http://www.w3.org/ns/org#", 
-      "xs" : "http://www.w3.org/2001/XMLSchema#", 
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
       "liscm" : "http://purl.imsglobal.org/vocab/lis/v2/liscm#", 
       "lisp" : "http://purl.imsglobal.org/vocab/lis/v2/pm#"
 
@@ -57,29 +57,43 @@
       "actor": "as:actor",
       "action": "as:verb",
       "object": "as:object",
-      "eventTime": "prov:startedAtTime",
-
+      "eventTime": {
+        "@id": "prov:startedAtTime",
+        "@type": "xsd:dateTime"
+      },
       "generated": "prov:generated",
       "target": "caliper:target",
       "edApp": "caliper:edApp",
       "group": "caliper:group",
-
       "membership": "caliper:lis/membership",
       "federatedSession": "caliper:federatedSession"
-
     },
     {
       "_comment": "Caliper common properties",
 
-      "name" : "schema:name",
-      "description" : "schema:description",
-      "dateCreated" : "schema:dateCreated",
-      "dateModified" : "schema:dateModified",
-      "datePublished" : "schema:datePublished",
-      "extensions" : "caliper:extensions",
-
-      "startedAtTime": "prov:startedAtTime",
-      "endedAtTime": "prov:endedAtTime"
+      "name": "schema:name",
+      "description": "schema:description",
+      "extensions": "caliper:extensions",
+      "dateCreated": {
+        "@id": "schema:dateCreated",
+        "@type": "xsd:dateTime"
+      },
+      "dateModified": {
+        "@id": "schema:dateModified",
+        "@type": "xsd:dateTime"
+      },
+      "datePublished": {
+        "@id": "schema:datePublished",
+        "@type": "xsd:dateTime"
+      },
+      "startedAtTime": {
+        "@id": "prov:startedAtTime",
+        "@type": "xsd:dateTime"
+      },
+      "endedAtTime": {
+        "@id": "prov:endedAtTime",
+        "@type": "xsd:dateTime"
+      }
     },
     {
       "_comment": "Entities",
