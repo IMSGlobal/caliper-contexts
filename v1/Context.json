@@ -464,6 +464,7 @@
       "caliper:NavigationEvent" : {
         "_comment":   "",
         "rdfs:subClassOf": "caliper:Event",
+        "caliper:requiredPropertyValueForSequence": ["action=action#NavigatedTo"],
         "caliper:optionalProperty": [
           "navigatedFrom"
         ]
@@ -476,7 +477,7 @@
       "caliper:ReadingEvent" : {
         "_comment":   "",
         "rdfs:subClassOf": "caliper:Event",
-        "caliper:requiredPropertyValueForSequence": ["action=action#NavigatedTo", "action=action#Viewed"],
+        "caliper:requiredPropertyValueForSequence": ["action=action#Viewed"],
         "caliper:optionalPropertyValueForSequence": ["action=action#Searched"]
       },
       "caliper:SessionEvent" : {
@@ -487,7 +488,8 @@
       },
       "caliper:ViewEvent" : {
         "_comment":   "",
-        "rdfs:subClassOf": "caliper:Event"
+        "rdfs:subClassOf": "caliper:Event",
+        "caliper:requiredPropertyValueForSequence": ["action=action#Viewed"]
       }
 
     }
