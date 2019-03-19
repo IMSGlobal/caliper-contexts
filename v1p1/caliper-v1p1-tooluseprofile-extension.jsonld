@@ -2,18 +2,19 @@
   "@context": ["http://purl.imsglobal.org/ctx/caliper/v1p1", {
 
     "AggregateMeasure": "caliper:AggregateMeasure",
+    "AggregateMeasureCollection": "caliper:AggregateMeasureCollection",
 
+    "maxMetricValue": {"@id": "caliper:maxMetricValue", "@type": "xsd:decimal"},
     "metric": {"@id": "caliper:metric", "@type": "@vocab"},
     "metricValue": {"@id": "caliper:metricValue", "@type": "xsd:decimal"},
-    "metricValueMax": {"@id": "caliper:metricValueMax", "@type": "xsd:decimal"},
 
-    "AssessmentsSubmitted": "caliper:AssessmentsSubmitted",
-    "AssessmentsPassed": "caliper:AssessmentsPassed",
-    "MinutesOnTask": "caliper:MinutesOnTask",
-    "SkillsMastered": "caliper:SkillsMastered",
-    "StandardsMastered": "caliper:StandardsMastered",
-    "UnitsCompleted": "caliper:UnitsCompleted",
-    "UnitsPassed": "caliper:UnitsPassed",
-    "WordsRead": "caliper:WordsRead"
+    "AssessmentsSubmitted": "caliper:metrics/AssessmentsSubmitted",
+    "AssessmentsPassed": "caliper:metrics/AssessmentsPassed",
+    "MinutesOnTask": "caliper:metrics/MinutesOnTask",
+    "SkillsMastered": "caliper:metrics/SkillsMastered",
+    "StandardsMastered": "caliper:metrics/StandardsMastered",
+    "UnitsCompleted": "caliper:metrics/UnitsCompleted",
+    "UnitsPassed": "caliper:metrics/UnitsPassed",
+    "WordsRead": "caliper:metrics/WordsRead"
   }]
 }
