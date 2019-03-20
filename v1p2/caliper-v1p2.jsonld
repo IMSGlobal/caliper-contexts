@@ -23,6 +23,7 @@
 
     "commentedOn": {"@id": "caliper:commentedOn", "type": "@id"},
     "commenter": {"@id": "caliper:commenter", "type": "@id"},
+    "creator": {"@id": "caliper:creator", "@type": "@id"},  
     "identifierType": {"@id": "caliper:identifierType", "@type": "@vocab"},
     "itemLabels": {"@id": "caliper:itemLabels", "@type": "@id", "@container": "@list"},
     "itemValues": {"@id": "caliper:itemValues", "@type": "@id", "@container": "@list"},
