@@ -10,7 +10,7 @@
     "Launched": "caliper:actions/Launched",
     "Returned": "caliper:actions/Returned",
 
-    "LtiDeepLinkingRequest": "caliper:LtiDeepLinkingRequest",
-    "LtiResourceLinkRequest": "caliper:LtiResourceLinkRequest"
+    "LtiDeepLinkingRequest": "caliper:lti/LtiDeepLinkingRequest",
+    "LtiResourceLinkRequest": "caliper:lti/LtiResourceLinkRequest"
   }]
 }
