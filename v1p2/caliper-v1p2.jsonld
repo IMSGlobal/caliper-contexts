@@ -85,6 +85,7 @@
     "ResourceManagementProfile": "caliper:profiles/ResourceManagementProfile",
     "SearchProfile": "caliper:profiles/SearchProfile",
     "SessionProfile": "caliper:profiles/SessionProfile",
+    "SurveyProfile": "caliper:profiles/SurveyProfile",
     "ToolLaunchProfile": "caliper:profiles/ToolLaunchProfile",
     "ToolUseProfile": "caliper:profiles/ToolUseProfile",
 
